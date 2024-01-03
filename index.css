@@ -1,0 +1,84 @@
+
+
+.background-image {
+    width: 100vw;
+    height: 30vw;
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem 2rem 1rem;
+    background: hsl(0, 0%, 100%);
+    z-index: 1;
+    position: relative; 
+    top: -15vw;
+    max-width: 40rem;
+    border-radius: 1rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.3rem;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.question span{
+    font-weight: 700;
+    flex: 1;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+}
+
+.question span:hover{
+    color: hsl(279, 63%, 49%);
+}
+
+.drop-down-button{
+    cursor: pointer;
+}
+
+.questions hr{
+    margin: 1.5rem 0;
+    border: 0.1rem solid hsla(0, 0%, 59%, 0.1);
+}
+
+.answer{
+    display: none;
+    text-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 33rem;
+    color: hsl(292, 16%, 49%);
+    line-height: 1.4rem;
+}
+
+@media screen and (max-width: 500px){
+    .main{
+        max-width: 20rem;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .main{
+        max-width: 25rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .main{
+        max-width: 40rem;
+    }
+}
+
